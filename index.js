@@ -1,8 +1,8 @@
 /*eslint-disable no-param-reassign*/
-const findReverseNumber = num => {
-    num = num + '';
-    num = +num.split('').reverse().join('');
-    return num;
+const findReverseNumber = n => {
+    n = n + '';
+    n = +n.split('').reverse().join('');
+    return n;
 };
 
 const findPalindrom = number => {
@@ -10,8 +10,8 @@ const findPalindrom = number => {
 
     return findPalindrom(findReverseNumber(number) + number);
 };
-const n = 15;
-const res = findPalindrom(n);
+const resNum = 15;
+const res = findPalindrom(resNum);
 console.log(res);
 
 
